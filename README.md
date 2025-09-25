@@ -1,0 +1,2 @@
+# AI_TWEET_SCRAIPING_MATOME
+Codexで作成したサイト。TwitterなどからAI情報を拾ってきてすばやく情報を入れるためのサイト。
