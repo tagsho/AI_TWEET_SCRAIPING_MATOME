@@ -1,0 +1,24 @@
+sources:
+  - name: "OpenAI Blog"
+    type: "rss"
+    feed_url: "https://openai.com/blog/rss.xml"
+    url: "https://openai.com/blog"
+    weight: 1.2
+  - name: "Hugging Face Blog"
+    type: "rss"
+    feed_url: "https://huggingface.co/blog/rss.xml"
+    url: "https://huggingface.co/blog"
+    weight: 1.1
+  - name: "Product Hunt AI"
+    type: "rss"
+    feed_url: "https://www.producthunt.com/feed/topics/artificial-intelligence"
+    url: "https://www.producthunt.com/topics/artificial-intelligence"
+    weight: 0.9
+  - name: "@kosuke_agos"
+    type: "rss"
+    source_type: "twitter"
+    handle: "@kosuke_agos"
+    feed_url: "https://nitter.net/kosuke_agos/rss"
+    metadata:
+      platform: "twitter"
+    weight: 1.3

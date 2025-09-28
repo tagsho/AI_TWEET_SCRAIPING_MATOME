@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "ai_tweet_scraping_matome"
+version = "0.1.0"
+description = "Aggregator for AI-related content"
+authors = ["Auto Dev <auto@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.29.0"}
+sqlalchemy = "^2.0.29"
+httpx = "^0.27.0"
+feedparser = "^6.0.11"
+python-dateutil = "^2.9.0"
+beautifulsoup4 = "^4.12.3"
+readability-lxml = "^0.8.1"
+openpyxl = "^3.1.2"
+python-slugify = "^8.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.0"
+pytest-asyncio = "^0.23.5"
+httpx = "^0.27.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
