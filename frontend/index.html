@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI速報まとめ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>AI速報まとめ</h1>
+      <p>AI関連ニュースを最速で横断表示</p>
+    </header>
+    <main>
+      <section class="filters">
+        <div class="tabs">
+          <button data-sort="new" class="tab active">新着</button>
+          <button data-sort="buzz" class="tab">バズ</button>
+        </div>
+        <div class="filter-row">
+          <input type="text" id="keyword" placeholder="キーワード検索" />
+          <input type="text" id="tag" placeholder="タグ (例: llm)" />
+          <select id="sourceType">
+            <option value="">ソース種別</option>
+            <option value="rss">RSS/ブログ</option>
+            <option value="twitter">X (埋め込み)</option>
+            <option value="youtube">YouTube</option>
+            <option value="reddit">Reddit</option>
+          </select>
+          <button id="refresh">更新</button>
+        </div>
+      </section>
+      <section id="items" class="cards"></section>
+    </main>
+    <template id="card-template">
+      <article class="card">
+        <header>
+          <h2 class="title"></h2>
+          <div class="score">
+            <span class="score-label">スコア:</span>
+            <span class="score-value"></span>
+          </div>
+        </header>
+        <p class="summary"></p>
+        <ul class="points"></ul>
+        <div class="tags"></div>
+        <div class="mentions"></div>
+        <footer class="links">
+          <a class="source-link" target="_blank" rel="noopener">元記事へ</a>
+        </footer>
+      </article>
+    </template>
+    <script src="app.js" type="module"></script>
+    <script async src="https://platform.twitter.com/widgets.js"></script>
+  </body>
+</html>
